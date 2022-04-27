@@ -1,0 +1,6 @@
+<div class="container">
+    <h1>List of Users</h1>
+    <ng-container *ngIf="users && users.length > 0">
+        <app-user *ngFor="let user of users" [user]="user"></app-user>
+    </ng-container>
+</div>

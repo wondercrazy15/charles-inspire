@@ -1,0 +1,16 @@
+<div *ngIf="user" class="container">
+    <h3>Hello, {{user.email}}</h3>
+    <div>
+        <span>Name:</span><input type="text" [(ngModel)]="user.name" class="form-control">
+    </div>
+    <div>
+        <span>Email:</span><input type="text" [(ngModel)]="user.email" class="form-control">
+    </div>
+    <div>
+        <span>Company Name:</span><input type="text" [(ngModel)]="user.company.name" class="form-control">
+    </div>
+    <div class="mt-2">
+        <button class="btn btn-primary m-3">save</button>
+        <button class="btn btn-primary">Cancel</button>
+    </div>
+</div>

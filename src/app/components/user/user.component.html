@@ -1,0 +1,15 @@
+<div *ngIf="user">
+    <dl>
+        <dt>Name:</dt>
+        <dd>{{user.name}}</dd>
+    </dl>
+    <dl>
+        <dt>Email:</dt>
+        <dd>{{user.email}}</dd>
+    </dl>
+    <dl>
+        <dt>Company Name:</dt>
+        <dd>{{user.company.name}}</dd>
+    </dl>
+    <a [routerLink]="'/edit-user/'+ user.id" class="btn btn-primary">Edit user</a>
+</div>
